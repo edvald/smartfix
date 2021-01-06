@@ -16,18 +16,22 @@
 <body>
 
   <a href="https://smartfix.is" target="_blank">
+    <!-- SET THE CORRECT WIDTH + HEIGHT HERE -->
     <div style="width: 300px; height: 250px;" id="banner"></div>
   </a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js" type="text/javascript"></script>
   <script>
+    // REPLACE THIS WITH THE DIRECTORY NAME WHEN COPYING
+    var name = "gerum-vid-300x250";
+
     lottie.loadAnimation({
       container: document.getElementById("banner"),
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: "/banners/gerum-vid-300x250/banner.json",
-      assetsPath: "/banners/gerum-vid-300x250/images/",
+      path: "banner.json",
+      assetsPath: "/banners/" + name + "/images/",
     });
   </script>
 
