@@ -17,18 +17,22 @@
 
   <a href="https://smartfix.is" target="_blank">
     <!-- SET THE CORRECT WIDTH + HEIGHT HERE -->
-    <div style="width: 728px; height: 210px;" id="banner"></div>
+    <div style="width: 300px; height: 250px;" id="banner"></div>
   </a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js" type="text/javascript"></script>
   <script>
+    // REPLACE THIS WITH THE DIRECTORY NAME WHEN COPYING
+    var name = "<name-of-directory>";
+
     lottie.loadAnimation({
       container: document.getElementById("banner"),
       renderer: "svg",
       loop: true,
       autoplay: true,
       path: "banner.json",
-    })
+      assetsPath: "/banners/" + name + "/images/",
+    });
   </script>
 
 </body>
